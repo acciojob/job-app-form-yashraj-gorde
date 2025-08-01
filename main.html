@@ -1,16 +1,57 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <title>Job Application Form</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <h2>Job Application Form</h2>
+
+  <form method="POST">
+
+    <!-- Name (Required) -->
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <!-- Email (Required) -->
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <!-- Gender (Radio Buttons, Required, name="gender") -->
+    <label>Gender:</label><br>
+    <input type="radio" id="gender_m" name="gender" value="male" required>
+    <label for="gender_m">Male</label>
+    <input type="radio" id="gender_f" name="gender" value="female" required>
+    <label for="gender_f">Female</label><br><br>
+
+    <!-- Laptop Brands Dropdown -->
+    <label for="laptop">Laptop Brand:</label><br>
+    <select id="laptop" name="laptop">
+      <option value="Apple">Apple</option>
+      <option value="Asus">Asus</option>
+      <option value="HP">HP</option>
+    </select><br><br>
+
+    <!-- Age (Required) -->
+    <label for="age">Age:</label><br>
+    <input type="number" id="age" name="age" required><br><br>
+
+    <!-- Date of Birth (Required) -->
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob" required><br><br>
+
+    <!-- Password (Required) -->
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <!-- Portfolio URL -->
+    <label for="portfolio">Portfolio URL:</label><br>
+    <input type="url" id="portfolio" name="portfolio"><br><br>
+
+    <!-- Submit Button -->
+    <button type="submit">Submit</button>
+
+  </form>
 
 </body>
-
 </html>
